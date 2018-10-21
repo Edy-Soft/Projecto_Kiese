@@ -1,0 +1,92 @@
+
+body { 
+	font-family: Verdana, sans-serif;
+}
+
+.container {  
+}
+.container_one { 
+	position: relative; 
+	width: 80%; 
+	margin: 0 auto; 
+	margin-top: 150px; 
+}
+.imageCotation { 
+	float: right; 
+	margin-right: 150px;
+}
+.image { 
+	width: 400px; 
+	height: 500px; 
+}
+.cotation { 
+	float: left; 
+	margin-left: 150px;
+	border-radius: 8px; 
+	border: 1px solid #E0E0E0; 
+	box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3), 0 1px 3px #E0E0E0;
+}
+.cotation-inform {  
+	width: 400px; 
+	height: 550px; 
+	text-align: center; 
+	color: #757575; 
+}
+.cotation-inform-tittle {
+	font-size: 1.2em; 
+	font-weight: bold; 
+}
+.cotation-inform-description { 
+	font-size: 2.2em; 
+	font-weight: bold;
+}
+.cotationPrice { 
+	border-top: 1px solid #E0E0E0;
+}
+.cotationPrice-price { 
+	font-size: 2.2em; 
+	color: #FF6D00; 
+	font-weight: bold; 
+}
+.cotationPrice-time { 
+	font-size: 1.3em; 
+	color: #FF6D00; 
+	font-weight: bold;
+}
+.cotation-inform-protecte {
+	font-weight: bold; 
+	width: 300px; 
+	height: 50px; 
+	border-radius: 15px; 
+	border: 2px solid #757575; 
+	background-color: #FF6D00; 
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 3px #3775B3;
+}
+.cotation-inform-protecte i { 
+	font-size: 1.5em; 
+	margin-right: 5px;
+}
+.cotation-inform-protecte:hover {
+	font-weight: bold; 
+	background-color: #757575; 
+	color: #FFF; 
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9);
+}
+.cover-kiese { 
+	font-size: 1.2em; 
+}
+.list { 
+	padding: 0px; 
+	margin: 0px; 
+}
+.list-cover { 
+	list-style: none; 
+	display: inline-block; 
+	width: 70px;
+	margin-right: 10px;
+}
+.list i { 
+	font-size: 2.2em;
+}
+.clear { clear: both; 
+}

@@ -1,0 +1,51 @@
+
+.container_four {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #424242;
+	margin-top: 30px;
+	padding-top: 50px;
+}
+
+.information { 
+	float: left;
+	width: 290px;
+	height: 170px;
+	margin: 50px 50px;
+	text-align: left;
+	color: #757575;
+}
+
+.information a {
+	text-decoration: none;
+	margin-left: 10px;
+	color: #757575;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.information li {
+	list-style: none;
+	line-height: 40px;
+}
+.clear {
+	clear: both;
+}
+.payment-content{
+	color: #757575;
+	width: 70%;
+	margin: 0 auto;
+	height: 100px;
+	text-align: left;
+}
+.payment-content li {
+	color: #757575;
+	display: inline-block;
+	margin-left: 30px;
+	font-weight: bold;
+}
+.info{
+	margin-right: 10px;
+	color: #FF6D00;
+}
+

@@ -1,0 +1,49 @@
+
+.container_three { 
+	width: 80%; 
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.container_three h1 {
+	font-size: 2.5em; 
+	font-family: OCR A Std, monospace; 
+	text-align: center; 
+	color: #757575; 
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);}
+
+.doubt { 
+	background-color: #FAFAFA;  
+	color: #757575; 
+	cursor: pointer; 
+	padding: 18px; 
+	width: 100%; 
+	border: none; 
+	text-align: left; 
+	outline: none; 
+	font-size: 1.2em; 
+	font-weight: bold;}
+
+.active, .doubt:hover { 
+	background-color: #EEEEEE; 
+	color: #E65100;
+}
+
+.doubt:after {
+	content: '\002B'; 
+	color: #757575; 
+	font-weight: bold; 
+	float: right; 
+	margin-left: 5px;}
+
+.active:after { 
+	content: "\2212"; }
+
+.doubt-content { 
+	font-family: Andale Mono, monospace; 
+	padding: 0 18px; 
+	max-height: 0; 
+	overflow: hidden; 
+	transition: max-height 0.2s ease-out; 
+	background-color: #f1f1f1; 
+	border-bottom: 2px solid #EEEEEE;}

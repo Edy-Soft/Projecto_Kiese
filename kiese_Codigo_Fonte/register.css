@@ -1,0 +1,266 @@
+
+body {
+	font-family: montserrat, arial, verdana;
+}
+.container-one-div {
+	width: 80%;
+	margin: 0 auto;
+	/*background-color: #F5F5F5;*/
+}
+.register-div {
+	margin-top: 5%;
+	float: left;
+	margin-left: 7%;
+}
+.cotation-div {
+	margin-top: 5%;
+	float: right;
+	margin-right: 7%;
+}
+.clear {
+	clear: both;
+}
+/*form styles*/
+.register-form {
+	width: 610px;
+	margin: 50px auto;
+	position: relative;
+}
+.register-fieldset {
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 50px 30px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 450px;
+	/*stacking fieldsets above each other*/
+	position: absolute;
+	text-align: center;
+}
+/*Hide all except first fieldset*/
+.register-fieldset:not(:first-of-type) {
+	display: none;
+}
+.register-input {
+	border: none;
+	border-bottom: 1px solid #FF6D00;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 1.0em;
+}
+.register-select {
+	border: 1px solid #FF6D00;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 40px;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 1.0em;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.register-label {
+	font-weight: bold;
+	color: #757575;
+}
+.register-error {
+	display: none;
+}
+.register-align-div {
+	text-align: left;
+}
+.register-phone-div {
+	width: 47.5%;
+	float: left;
+}
+.register-birth-div {
+	width: 47.5%;
+	float: right;
+}
+.register-provncia-div {
+	width: 47.5%;
+	float: left;
+}
+.register-municipio-div {
+	width: 47.5%;
+	float: right;
+}
+.register-rua-div {
+	width: 47.5%;
+	float: left;
+}
+.register-ncasa-div {
+	width: 47.5%;
+	float: right;
+}
+.register-factura-div {
+	width: 47.5%;
+	float: left;
+}
+.register-imagem-div {
+	width: 47.5%;
+	float: right;
+}
+/*buttons*/
+.action-button {
+	width: 200px;
+	background: #FF6D00;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 15px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin-top: 10px;
+}
+.action-button:hover, .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #FF6D00;
+}
+.action-button-alter {
+	margin-top: 25px;
+	border: none;
+	font-weight: bold;
+	border-radius: 10px;
+}
+.action-button-alter:hover {
+	border: 1px solid #FF6D00;
+}
+.button-submit {
+	color: white;
+	width: 80%;
+	height: 70px;
+	margin-top: 5%;
+	font-size: 0.8em;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+	border: 0 none;
+	background-color: #FF6D00;
+}
+.button-submit:hover {
+	box-shadow: 0 0 0 3px white, 0 0 0 5px #FF6D00;
+	font-weight: bold;
+}
+.icon-button {
+	font-size: 2.0em;
+	margin-left: 5%;
+	margin-right: 5%;
+	color: white;
+}
+.action-button-alter-div {
+	text-align: left;
+}
+.choose-payment-span {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #757575; 
+}
+/*progressbar*/
+.register-progressbar-ul {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+.register-progressbar-li {
+	list-style-type: none;
+	color: #757575;
+	font-size: 12px;
+	font-weight: bold;
+	width: 23.33%;
+	float: left;
+	position: relative;
+	text-align: center;
+}
+.register-progressbar-li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: white;
+	background: #9E9E9E;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+.register-progressbar-li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #9E9E9E;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+.register-progressbar-li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none;
+}
+/*marking active/completed steps orange*/
+/*The number of the step and the connector before it = orange*/
+.register-progressbar-li.active:before, .register-progressbar-li.active:after {
+	background: #FF6D00;
+	color: white;
+}
+.register-progressbar-li.active {
+	color: #FF6D00;
+}
+
+/*code of cotation informe*/
+.cotation-fieldset {  
+	width: 400px; 
+	height: 430px; 
+	text-align: center; 
+	color: #757575; 
+	margin: 120px auto;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	border: 0 none;
+	background-color: #FFB74D;
+}
+.cotation-tittle-p {
+	font-size: 1.2em; 
+	font-weight: bold; 
+}
+.cotation-description-span { 
+	font-size: 2.2em; 
+	font-weight: bold;
+}
+.cotation-price-div { 
+	border-top: 1px solid #E0E0E0;
+}
+.cotation-price-span { 
+	font-size: 2.2em; 
+	color: #FF6D00; 
+	font-weight: bold; 
+}
+.cotation-time-span { 
+	font-size: 1.3em; 
+	color: #FF6D00; 
+	font-weight: bold;
+}
+.cover-kiese-p { 
+	margin-top: 30px;
+	font-size: 1.2em; 
+}
+.cover-kiese-ul { 
+	padding: 0px; 
+	
+}
+.cover-kiese-li { 
+	list-style: none; 
+	display: inline-block; 
+	width: 70px;
+	margin-bottom: 5%; 
+}
+.cover-kiese-icon { 
+	font-size: 2.2em;
+}
